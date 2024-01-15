@@ -30,6 +30,9 @@ namespace Week_01_lab_02_Cars_W
             this.day = day;
         }
 
-        
+        pri void MethodName()
+        {
+
+        }
     }
 }
