@@ -29,9 +29,9 @@ namespace Week_01_lab_02_Cars_W
 
     public class Date
     {
-        private int year;
-        private int month;
         private int day;
+        private int month;
+        private int year;
 
         public Date(int day = 1, int month = 1, int year = 2022)
         {
@@ -39,12 +39,6 @@ namespace Week_01_lab_02_Cars_W
             this.month = month;
             this.year = year;
             Normalize();
-        }
-
-        public override string ToString()
-        {
-            string monthText = GetMonthText(month);
-            return $"{year}-{monthText}-{day:D2}";
         }
 
         public void Add(int days)
@@ -55,7 +49,7 @@ namespace Week_01_lab_02_Cars_W
 
         public void Add(int months, int days)
         {
-            month += months;
+            months += months;
             day += days;
             Normalize();
         }
@@ -70,9 +64,10 @@ namespace Week_01_lab_02_Cars_W
 
         private void Normalize()
         {
-            while (day > GetDaysInMonth(year, month))
+            int daysInMonth = GetDaysInMonth(year, month);
+            while (day > daysInMonth)
             {
-                day -= GetDaysInMonth(year, month);
+                day -= daysInMonth;
                 month++;
             }
 
@@ -83,6 +78,32 @@ namespace Week_01_lab_02_Cars_W
             }
         }
 
+        public override string ToString()
+        {
+            string monthText = GetMonthText(month);
+            return $"{year}-{monthText}-{day}";
+        }
+
+        public string GetMonthText(int month)
+        {
+            switch (month)
+            {
+
+                case 1: return "Jan";
+                case 2: return "Feb";
+                case 3: return "Mar";
+                case 4: return "Apr";
+                case 5: return "May";
+                case 6: return "Jun";
+                case 7: return "Jul";
+                case 8: return "Aug";
+                case 9: return "Sep";
+                case 10: return "Oct";
+                case 11: return "Nov";
+                case 12: return "Dec";
+                default: return "Unknown";
+            }
+        }
         private int GetDaysInMonth(int year, int month)
         {
             switch (month)
@@ -102,26 +123,6 @@ namespace Week_01_lab_02_Cars_W
         private bool IsLeapYear(int year)
         {
             return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
-        }
-
-        private string GetMonthText(int month)
-        {
-            switch (month)
-            {
-                case 1: return "Jan";
-                case 2: return "Feb";
-                case 3: return "Mar";
-                case 4: return "Apr";
-                case 5: return "May";
-                case 6: return "Jun";
-                case 7: return "Jul";
-                case 8: return "Aug";
-                case 9: return "Sep";
-                case 10: return "Oct";
-                case 11: return "Nov";
-                case 12: return "Dec";
-                default: return "Unknown";
-            }
         }
     }
 }
