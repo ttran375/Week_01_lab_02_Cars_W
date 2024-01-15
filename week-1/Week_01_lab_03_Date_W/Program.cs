@@ -76,7 +76,6 @@ namespace Week_01_lab_02_Cars_W
                 month++;
             }
 
-
             while (month > 12)
             {
                 month -= 12;
