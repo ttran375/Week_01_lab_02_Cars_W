@@ -88,7 +88,11 @@ namespace Week_01_lab_02_Cars_W
 
         public string GetMonthText(int month)
         {
+<<<<<<< HEAD
             switch (switch_on)
+=======
+            switch (month)
+>>>>>>> 1e28383 (Week_01_lab_03_Date_W)
             {
 
                 case 1: return "Jan";
