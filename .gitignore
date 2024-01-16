@@ -312,3 +312,6 @@ paket-files/
 
 # Databricks file
 *.pyi
+
+**/obj/
+comp-123.sln
