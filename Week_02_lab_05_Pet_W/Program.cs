@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
-class Pet
+public class Pet
 {
     public string Name { get; }
-    public string Owner { get; private set; }
+    private string Owner { get; set; }
     public int Age { get; }
     public string Description { get; }
     private bool IsHouseTrained { get; set; }
@@ -18,11 +19,6 @@ class Pet
         IsHouseTrained = false;
     }
 
-    public override string ToString()
-    {
-        return $"Name: {Name}, Age: {Age}, Description: {Description}, Owner: {Owner}, IsHouseTrained: {IsHouseTrained}";
-    }
-
     public void SetOwner(string newOwner)
     {
         Owner = newOwner;
@@ -32,69 +28,46 @@ class Pet
     {
         IsHouseTrained = true;
     }
+
+    public override string ToString()
+    {
+        return $"Name: {Name}, Age: {Age}, Description: {Description}, Owner: {Owner}, IsHouseTrained: {IsHouseTrained}";
+    }
+
+    public bool IsOwnedBy(string ownerName)
+    {
+        return Owner == ownerName;
+    }
 }
 
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        List<Pet> petList = new List<Pet>();
+        Pet pet1 = new Pet("Rex", 5, "A playful dog");
+        Pet pet2 = new Pet("Mittens", 3, "A lazy cat");
+        Pet pet3 = new Pet("Bubbles", 2, "A colorful fish");
+        Pet pet4 = new Pet("Tweety", 1, "A chirpy bird");
 
-        // Create four objects
-        Pet pet1 = new Pet("Dog1", 2, "Friendly dog");
-        Pet pet2 = new Pet("Cat1", 1, "Playful cat");
-        Pet pet3 = new Pet("Parrot1", 3, "Colorful parrot");
-        Pet pet4 = new Pet("Fish1", 1, "Beautiful fish");
+        List<Pet> pets = new List<Pet> { pet1, pet2, pet3, pet4 };
 
-        // Add objects to the list
-        petList.Add(pet1);
-        petList.Add(pet2);
-        petList.Add(pet3);
-        petList.Add(pet4);
+        pet1.SetOwner("John");
+        pet2.SetOwner("Jane");
+        pet3.Train();
 
-        // Use some methods
-        pet1.Train();
-        pet2.SetOwner("John");
-
-        // Display all objects in the collection
-        Console.WriteLine("All Pets:");
-        foreach (Pet pet in petList)
+        foreach (Pet pet in pets)
         {
-            Console.WriteLine(pet.ToString());
+            Console.WriteLine(pet);
         }
 
-        // Prompt user for an owner's name
-        // Prompt user for an owner's name
-        Console.Write("\nEnter owner's name to filter pets: ");
-        string? ownerName = Console.ReadLine();
+        Console.Write("Enter owner's name: ");
+        string ownerName = Console.ReadLine();
 
-        // Check if the input is not null before proceeding
-        if (ownerName != null)
-        {
-            // Display pets belonging to a particular person
-            Console.WriteLine($"\nPets belonging to {ownerName}:");
-            foreach (Pet pet in petList)
-            {
-                if (pet.Owner.Equals(ownerName, StringComparison.OrdinalIgnoreCase))
-                {
-                    Console.WriteLine(pet.ToString());
-                }
-            }
-        }
-        else
-        {
-            Console.WriteLine("Invalid input for owner's name.");
-        }
+        var ownedPets = pets.Where(pet => pet.IsOwnedBy(ownerName));
 
-
-        // Display pets belonging to a particular person
-        Console.WriteLine($"\nPets belonging to {ownerName}:");
-        foreach (Pet pet in petList)
+        foreach (Pet pet in ownedPets)
         {
-            if (pet.Owner.Equals(ownerName, StringComparison.OrdinalIgnoreCase))
-            {
-                Console.WriteLine(pet.ToString());
-            }
+            Console.WriteLine(pet);
         }
     }
 }
