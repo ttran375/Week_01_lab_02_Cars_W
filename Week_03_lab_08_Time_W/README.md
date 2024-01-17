@@ -195,115 +195,81 @@ This method must be static because it needs to access a static field.
 
 Insert the following code statements in your Program.cs file:
 
-<span class="mark">//create a list to store the objects</span>
+``` cs
+//create a list to store the objects
+List<Time> times = new List<Time>() 
+  { 
+    new Time(9, 35),
+    new Time(18, 5),
+    new Time(20, 500),
+    new Time(10),
+    new Time()
+  };
 
-<span class="mark">List\<Time\> times = new List\<Time\>()</span>
 
-<span class="mark">{</span>
 
-<span class="mark">new Time(9, 35),</span>
 
-<span class="mark">new Time(18, 5),</span>
+//display all the objects
+TimeFormat format = TimeFormat.Hour12;
+Console.WriteLine($"\n\nTime format is {format}");
+foreach (Time t in times)
+{
+    Console.WriteLine(t);
+}
 
-<span class="mark">new Time(20, 500),</span>
 
-<span class="mark">new Time(10),</span>
+//change the format of the output
+format = TimeFormat.Mil;
+Console.WriteLine($"\n\nSetting time format to {format}");
+//SetFormat(TimeFormat) is a class member, so you need the type to access it
+Time.SetFormat(format);
+//again display all the objects
+foreach (Time t in times)
+{
+    Console.WriteLine(t);
+}
 
-<span class="mark">new Time()</span>
 
-<span class="mark">};</span>
+//change the format of the output
+format = TimeFormat.Hour24;
+Console.WriteLine($"\n\nSetting time format to {format}");
+//SetFormat(TimeFormat) is a class member, so you need the type to access it
+Time.SetFormat(format);
+foreach (Time t in times)
+{ 
+    Console.WriteLine(t);
+}
 
-<span class="mark">//display all the objects</span>
-
-<span class="mark">TimeFormat format = TimeFormat.Hour12;</span>
-
-<span class="mark">Console.WriteLine(\$"\n\nTime format is
-{format}");</span>
-
-<span class="mark">foreach (Time t in times)</span>
-
-<span class="mark">{</span>
-
-<span class="mark">Console.WriteLine(t);</span>
-
-<span class="mark">}</span>
-
-<span class="mark">//change the format of the output</span>
-
-<span class="mark">format = TimeFormat.Mil;</span>
-
-<span class="mark">Console.WriteLine(\$"\n\nSetting time format to
-{format}");</span>
-
-<span class="mark">//SetFormat(TimeFormat) is a class member, so you
-need the type to access it</span>
-
-<span class="mark">Time.SetFormat(format);</span>
-
-<span class="mark">//again display all the objects</span>
-
-<span class="mark">foreach (Time t in times)</span>
-
-<span class="mark">{</span>
-
-<span class="mark">Console.WriteLine(t);</span>
-
-<span class="mark">}</span>
-
-<span class="mark">//change the format of the output</span>
-
-<span class="mark">format = TimeFormat.Hour24;</span>
-
-<span class="mark">Console.WriteLine(\$"\n\nSetting time format to
-{format}");</span>
-
-<span class="mark">//SetFormat(TimeFormat) is a class member, so you
-need the type to access it</span>
-
-<span class="mark">Time.SetFormat(format);</span>
-
-<span class="mark">foreach (Time t in times)</span>
-
-<span class="mark">{</span>
-
-<span class="mark">Console.WriteLine(t);</span>
-
-<span class="mark">}</span>
+```
 
 Your output will look like below:
 
+```
 Time format is Hour12
-
 9:35 AM
-
 6:05 PM
-
 8:00 PM
-
 10:00 AM
-
 0:00 AM
 
+
+
+
 Setting time format to Mil
-
 0935
-
 1805
-
 2000
-
 1000
-
 0000
 
+
+
+
 Setting time format to Hour24
-
 09:35
-
 18:05
-
 20:00
-
 10:00
-
 00:00
+
+```
