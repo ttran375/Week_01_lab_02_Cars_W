@@ -7,21 +7,41 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				// Git
+				// Dev Container
+				"ms-vscode-remote.remote-containers",
+				// GitHub
 				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"GitHub.codespaces",
 				"vsls-contrib.gitdoc",
 				// Intellicode
+				"ms-dotnettools.vscodeintellicode-csharp",
 				"VisualStudioExptTeam.intellicode-api-usage-examples",
 				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.vscodeintellicode-completions",
+				"VisualStudioExptTeam.vscodeintellicode-insiders",
 				// C#
 				"ms-dotnettools.csharp",
 				"ms-dotnettools.csdevkit",
-				"ms-dotnettools.vscode-dotnet-runtime",
 				"ms-dotnettools.vscodeintellicode-csharp",
 				// Dotnet
+				"ms-dotnettools.dotnet-interactive-vscode",
+				"ms-dotnettools.vscode-dotnet-runtime",
 				// "ms-dotnettools.vscode-dotnet-pack",
-				"formulahendry.dotnet",
-				"formulahendry.dotnet-test-explorer",
+				// "ms-dotnettools.vscode-dotnet-sdk",
+				// "formulahendry.dotnet",
+				// "formulahendry.dotnet-test-explorer",
+				// "ms-dotnettools.vscode-dotnet-runtime",
+				// "ms-dotnettools.blazorwasm-companion",
+				// "ms-dotnettools.csharp",
+				// "ms-dotnettools.csharp-snippets",
+				// "ms-dotnettools.csharp-pack",
+				// "ms-dotnettools.csharp-interactive-vscode",
+				// "ms-dotnettools.csharp-analyzer-vscode",
+				// "ms-dotnettools.csharp-project-templates",
+				// "ms-dotnettools.csharp-repl",
+				// "ms-dotnettools.csharp-repl-commands",
+				// "ms-dotnettools.dotnet-maui",
 				// Snippets
 				"kreativ-software.csharpextensions",
 				"jorgeserrano.vscode-csharp-snippets",
