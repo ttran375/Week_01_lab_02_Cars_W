@@ -5,7 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        //create a list to store the objects
+        // Create a list to store the objects
         List<Time> times = new List<Time>()
         {
           new Time(9, 35),
@@ -15,10 +15,7 @@ class Program
           new Time()
         };
 
-
-
-
-        //display all the objects
+        // Display all the objects
         TimeFormat format = TimeFormat.Hour12;
         Console.WriteLine($"\n\nTime format is {format}");
         foreach (Time t in times)
@@ -26,23 +23,24 @@ class Program
             Console.WriteLine(t);
         }
 
-
-        //change the format of the output
+        // Change the format of the output
         format = TimeFormat.Mil;
         Console.WriteLine($"\n\nSetting time format to {format}");
-        //SetFormat(TimeFormat) is a class member, so you need the type to access it
+
+        // SetFormat(TimeFormat) is a class member, so you need the type to access it
         Time.SetFormat(format);
-        //again display all the objects
+
+        // Again display all the objects
         foreach (Time t in times)
         {
             Console.WriteLine(t);
         }
 
-
-        //change the format of the output
+        // Change the format of the output
         format = TimeFormat.Hour24;
         Console.WriteLine($"\n\nSetting time format to {format}");
-        //SetFormat(TimeFormat) is a class member, so you need the type to access it
+
+        // SetFormat(TimeFormat) is a class member, so you need the type to access it
         Time.SetFormat(format);
         foreach (Time t in times)
         {
