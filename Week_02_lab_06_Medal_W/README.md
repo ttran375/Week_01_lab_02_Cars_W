@@ -138,122 +138,87 @@ feature.
 Insert the following code statements in the **Main()** method of your
 Program.cs file:
 
-<span class="mark">//create a medal object</span>
+``` cs
+//create a medal object
 
-<span class="mark">Medal m1 = new Medal("</span>Horace
-Gwynne<span class="mark">", "Boxing", MedalColor.Gold, 2012,
-true);</span>
+Medal m1 = new Medal("Horace Gwynne", "Boxing", MedalColor.Gold, 2012, true);
 
-<span class="mark">//print the object</span>
+//print the object
 
-<span class="mark">Console.WriteLine(m1);</span>
+Console.WriteLine(m1);
 
-<span class="mark">//print only the name of the medal holder</span>
+//print only the name of the medal holder
 
-<span class="mark">Console.WriteLine(m1.Name);</span>
+Console.WriteLine(m1.Name);
 
-<span class="mark">//create another object</span>
+//create another object
 
-<span class="mark">Medal m2 = new Medal("Michael Phelps", "Swimming",
-MedalColor.Gold, 2012, false);</span>
+Medal m2 = new Medal("Michael Phelps", "Swimming", MedalColor.Gold, 2012, false);
 
-<span class="mark">//print the updated m2</span>
+//print the updated m2
 
-<span class="mark">Console.WriteLine(m2);</span>
+Console.WriteLine(m2);
 
-<span class="mark">//create a list to store the medal objects</span>
+//create a list to store the medal objects
 
-<span class="mark">List\<Medal\> medals = new List\<Medal\>(){ m1,
-m2};</span>
+List<Medal> medals = new List<Medal>(){ m1, m2};
 
-<span class="mark"></span>
 
-<span class="mark">medals.Add(new Medal("</span>Ryan
-Cochrane<span class="mark">", "Swimming", MedalColor.Silver, 2012,
-false));</span>
+medals.Add(new Medal("Ryan Cochrane", "Swimming", MedalColor.Silver, 2012, false));
 
-<span class="mark">medals.Add(new Medal("</span>Adam van
-Koeverden<span class="mark">", "Canoeing", MedalColor.Silver, 2012,
-false));</span>
+medals.Add(new Medal("Adam van Koeverden", "Canoeing", MedalColor.Silver, 2012, false));
 
-<span class="mark">medals.Add(new Medal("</span>Rosie
-MacLennan<span class="mark">", "Gymnastics", MedalColor.Gold, 2012,
-false));</span>
+medals.Add(new Medal("Rosie MacLennan", "Gymnastics", MedalColor.Gold, 2012, false));
 
-<span class="mark">medals.Add(new Medal("</span>Christine
-Girard<span class="mark">", "Weightlifting", MedalColor.Bronze, 2012,
-false));</span>
+medals.Add(new Medal("Christine Girard", "Weightlifting", MedalColor.Bronze, 2012, false));
 
-<span class="mark">medals.Add(new Medal("</span>Charles
-Hamelin<span class="mark">", "Short Track", MedalColor.Gold, 2014,
-true));</span>
+medals.Add(new Medal("Charles Hamelin", "Short Track", MedalColor.Gold, 2014, true));
 
-<span class="mark">medals.Add(new Medal("</span>Alexandre
-Bilodeau<span class="mark">", "Freestyle skiing", MedalColor.Gold, 2012,
-true));</span>
+medals.Add(new Medal("Alexandre Bilodeau", "Freestyle skiing", MedalColor.Gold, 2012, true));
 
-<span class="mark">medals.Add(new Medal("</span>Jennifer
-Jones<span class="mark">", "Curling", MedalColor.Gold, 2014,
-false));</span>
+medals.Add(new Medal("Jennifer Jones", "Curling", MedalColor.Gold, 2014, false));
 
-<span class="mark">medals.Add(new Medal("</span>Charle
-Cournoyer<span class="mark">", "Short Track", MedalColor.Bronze, 2014,
-false));</span>
+medals.Add(new Medal("Charle Cournoyer", "Short Track", MedalColor.Bronze, 2014, false));
 
-<span class="mark">medals.Add(new Medal("</span>Mark
-McMorris<span class="mark">", "Snowboarding", MedalColor.Bronze, 2014,
-false));</span>
+medals.Add(new Medal("Mark McMorris", "Snowboarding", MedalColor.Bronze, 2014, false));
 
-<span class="mark">medals.Add(new Medal("</span>Sidney Crosby
-<span class="mark">", "Ice Hockey", MedalColor.Gold, 2014,
-false));</span>
+medals.Add(new Medal("Sidney Crosby ", "Ice Hockey", MedalColor.Gold, 2014, false));
 
-<span class="mark">medals.Add(new Medal("</span>Brad
-Jacobs<span class="mark">", "Curling", MedalColor.Gold, 2014,
-false));</span>
+medals.Add(new Medal("Brad Jacobs", "Curling", MedalColor.Gold, 2014, false));
 
-<span class="mark">medals.Add(new Medal("</span>Ryan
-Fry<span class="mark">", "Curling", MedalColor.Gold, 2014,
-false));</span>
+medals.Add(new Medal("Ryan Fry", "Curling", MedalColor.Gold, 2014, false));
 
-<span class="mark">medals.Add(new Medal("</span>Antoine
-Valois-Fortier<span class="mark">", "Judo", MedalColor.Bronze, 2012,
-false));</span>
+medals.Add(new Medal("Antoine Valois-Fortier", "Judo", MedalColor.Bronze, 2012, false));
 
-<span class="mark">medals.Add(new Medal("</span>Brent
-Hayden<span class="mark">", "Swimming", MedalColor.Bronze, 2012,
-false));</span>
+medals.Add(new Medal("Brent Hayden", "Swimming", MedalColor.Bronze, 2012, false));
 
-<span class="mark">//prints a numbered list of 16 medals.</span>
+//prints a numbered list of 16 medals.
 
-<span class="mark">Console.WriteLine("\n\nAll 16 medals");</span>
+Console.WriteLine("\n\nAll 16 medals");
 
-<span class="mark"></span>
 
-<span class="mark">//prints a numbered list of 16 names (ONLY)</span>
+//prints a numbered list of 16 names (ONLY)
 
-<span class="mark">Console.WriteLine("\n\nAll 16 names");</span>
+Console.WriteLine("\n\nAll 16 names");
 
-<span class="mark"></span>
 
-<span class="mark">//prints a numbered list of 9 gold medals</span>
+//prints a numbered list of 9 gold medals
 
-<span class="mark">Console.WriteLine("\n\nAll 9 gold medals");</span>
+Console.WriteLine("\n\nAll 9 gold medals");
 
-<span class="mark">//prints a numbered list of 9 medals in 2012</span>
+//prints a numbered list of 9 medals in 2012
 
-<span class="mark">Console.WriteLine("\n\nAll 9 medals");</span>
+Console.WriteLine("\n\nAll 9 medals");
 
-<span class="mark">//prints a numbered list of 4 gold medals in
-2012</span>
+//prints a numbered list of 4 gold medals in 2012
 
-<span class="mark">Console.WriteLine("\n\nAll 4 gold medals");</span>
+Console.WriteLine("\n\nAll 4 gold medals");
 
-<span class="mark">//prints a numbered list of 3 world record
-medals</span>
+//prints a numbered list of 3 world record medals
 
-<span class="mark">Console.WriteLine("\n\nAll 3 records");</span>
+Console.WriteLine("\n\nAll 3 records");
 
-<span class="mark"> //saving all the medal to file Medals.txt</span>
+//saving all the medal to file Medals.txt
 
-<span class="mark">Console.WriteLine("\n\nSaving to file");</span>
+Console.WriteLine("\n\nSaving to file");
+```
