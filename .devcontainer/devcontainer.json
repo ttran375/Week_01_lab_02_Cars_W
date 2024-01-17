@@ -18,7 +18,6 @@
 				"ms-dotnettools.csharp",
 				"ms-dotnettools.csdevkit",
 				"ms-dotnettools.vscodeintellicode-csharp",
-				"jchannon.csharpextensions",
 				// Dotnet
 				"ms-dotnettools.dotnet-interactive-vscode",
 				"ms-dotnettools.vscode-dotnet-runtime",
