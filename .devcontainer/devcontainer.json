@@ -7,19 +7,24 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				// Git
 				"GitHub.copilot",
 				"vsls-contrib.gitdoc",
+				// Intellicode
 				"VisualStudioExptTeam.intellicode-api-usage-examples",
 				"VisualStudioExptTeam.vscodeintellicode",
-				"ms-dotnettools.vscode-dotnet-pack",
-				"adrianwilczynski.asp-net-core-snippet-pack",
-				"formulahendry.dotnet",
-				"formulahendry.dotnet-test-explorer",
-				"kreativ-software.csharpextensions",
-				"ms-dotnettools.vscodeintellicode-csharp",
+				// C#
 				"ms-dotnettools.csdevkit",
 				"ms-dotnettools.vscode-dotnet-runtime",
+				"ms-dotnettools.vscodeintellicode-csharp",
+				// Dotnet
+				// "ms-dotnettools.vscode-dotnet-pack",
+				"formulahendry.dotnet",
+				"formulahendry.dotnet-test-explorer",
+				// Snippets
+				"kreativ-software.csharpextensions",
 				"jorgeserrano.vscode-csharp-snippets",
+				"adrianwilczynski.asp-net-core-snippet-pack",
 				"vain0x.csharp-gen-ctor",
 				"afmicc.GetterAndSetterGenerator",
 				"streetsidesoftware.code-spell-checker",
