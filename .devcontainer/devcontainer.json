@@ -41,7 +41,7 @@
 				"vain0x.csharp-gen-ctor",
 				"afmicc.GetterAndSetterGenerator",
 				// "adrianwilczynski.asp-net-core-snippet-pack",
-				// Others
+				// Checker
 				"streetsidesoftware.code-spell-checker",
 			]
 		}
