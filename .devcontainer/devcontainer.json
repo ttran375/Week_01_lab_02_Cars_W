@@ -15,9 +15,9 @@
 				"GitHub.codespaces",
 				"vsls-contrib.gitdoc",
 				// C#
-				// "ms-dotnettools.csharp",
 				"ms-dotnettools.csdevkit",
 				// "ms-dotnettools.vscodeintellicode-csharp",
+				// "ms-dotnettools.csharp",
 				// Dotnet
 				// "ms-dotnettools.dotnet-interactive-vscode",
 				// "ms-dotnettools.vscode-dotnet-runtime",
