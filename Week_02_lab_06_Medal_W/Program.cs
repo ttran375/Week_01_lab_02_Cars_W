@@ -11,53 +11,57 @@ namespace Week_01_lab_02_Cars_W
     {
         static void Main(string[] args)
         {
-            //create a medal object
+            // Create a medal object
             Medal m1 = new Medal("Horace Gwynne", "Boxing", MedalColor.Gold, 2012, true);
-            //print the object
+
+            // Print the object
             Console.WriteLine(m1);
-            //print only the name of the medal holder
+
+            // Print only the name of the medal holder
             Console.WriteLine(m1.Name);
 
-
-            //create another object
+            // Create another object
             Medal m2 = new Medal("Michael Phelps", "Swimming", MedalColor.Gold, 2012, false);
-            //print the updated m2
+
+            // Print the updated m2
             Console.WriteLine(m2);
 
-            //create a list to store the medal objects
-            List<Medal> medals = new List<Medal>() { m1, m2 };
+            // Create a list to store the medal objects
+            List<Medal> medals = new List<Medal>
+            {
+                m1,
+                m2,
+                new Medal("Ryan Cochrane", "Swimming", MedalColor.Silver, 2012, false),
+                new Medal("Adam van Koeverden", "Canoeing", MedalColor.Silver, 2012, false),
+                new Medal("Rosie MacLennan", "Gymnastics", MedalColor.Gold, 2012, false),
+                new Medal("Christine Girard", "Weightlifting", MedalColor.Bronze, 2012, false),
+                new Medal("Charles Hamelin", "Short Track", MedalColor.Gold, 2014, true),
+                new Medal("Alexandre Bilodeau", "Freestyle skiing", MedalColor.Gold, 2012, true),
+                new Medal("Jennifer Jones", "Curling", MedalColor.Gold, 2014, false),
+                new Medal("Charle Cournoyer", "Short Track", MedalColor.Bronze, 2014, false),
+                new Medal("Mark McMorris", "Snowboarding", MedalColor.Bronze, 2014, false),
+                new Medal("Sidney Crosby ", "Ice Hockey", MedalColor.Gold, 2014, false),
+                new Medal("Brad Jacobs", "Curling", MedalColor.Gold, 2014, false),
+                new Medal("Ryan Fry", "Curling", MedalColor.Gold, 2014, false),
+                new Medal("Antoine Valois-Fortier", "Judo", MedalColor.Bronze, 2012, false),
+                new Medal("Brent Hayden", "Swimming", MedalColor.Bronze, 2012, false)
+            };
 
-            medals.Add(new Medal("Ryan Cochrane", "Swimming", MedalColor.Silver, 2012, false));
-            medals.Add(new Medal("Adam van Koeverden", "Canoeing", MedalColor.Silver, 2012, false));
-            medals.Add(new Medal("Rosie MacLennan", "Gymnastics", MedalColor.Gold, 2012, false));
-            medals.Add(new Medal("Christine Girard", "Weightlifting", MedalColor.Bronze, 2012, false));
-            medals.Add(new Medal("Charles Hamelin", "Short Track", MedalColor.Gold, 2014, true));
-            medals.Add(new Medal("Alexandre Bilodeau", "Freestyle skiing", MedalColor.Gold, 2012, true));
-            medals.Add(new Medal("Jennifer Jones", "Curling", MedalColor.Gold, 2014, false));
-            medals.Add(new Medal("Charle Cournoyer", "Short Track", MedalColor.Bronze, 2014, false));
-            medals.Add(new Medal("Mark McMorris", "Snowboarding", MedalColor.Bronze, 2014, false));
-            medals.Add(new Medal("Sidney Crosby ", "Ice Hockey", MedalColor.Gold, 2014, false));
-            medals.Add(new Medal("Brad Jacobs", "Curling", MedalColor.Gold, 2014, false));
-            medals.Add(new Medal("Ryan Fry", "Curling", MedalColor.Gold, 2014, false));
-            medals.Add(new Medal("Antoine Valois-Fortier", "Judo", MedalColor.Bronze, 2012, false));
-            medals.Add(new Medal("Brent Hayden", "Swimming", MedalColor.Bronze, 2012, false));
-
-
-            //prints a numbered list of 16 medals.
+            // Prints a numbered list of 16 medals.
             Console.WriteLine("\n\nAll 16 medals");
             for (int i = 0; i < medals.Count; i++)
             {
                 Console.WriteLine($"{i + 1}. {medals[i]}");
             }
 
-            //prints a numbered list of 16 names (ONLY)
+            // Prints a numbered list of 16 names (ONLY)
             Console.WriteLine("\n\nAll 16 names");
             for (int i = 0; i < medals.Count; i++)
             {
                 Console.WriteLine($"{i + 1}. {medals[i].Name}");
             }
 
-            //prints a numbered list of 9 gold medals
+            // Prints a numbered list of 9 gold medals
             Console.WriteLine("\n\nAll 9 gold medals");
             int goldCount = 0;
             for (int i = 0; i < medals.Count; i++)
@@ -69,7 +73,7 @@ namespace Week_01_lab_02_Cars_W
                 }
             }
 
-            //prints a numbered list of 9 medals in 2012
+            // Prints a numbered list of 9 medals in 2012
             Console.WriteLine("\n\nAll 9 medals in 2012");
             int year2012Count = 0;
             for (int i = 0; i < medals.Count; i++)
@@ -81,7 +85,7 @@ namespace Week_01_lab_02_Cars_W
                 }
             }
 
-            //prints a numbered list of 4 gold medals in 2012
+            // Prints a numbered list of 4 gold medals in 2012
             Console.WriteLine("\n\nAll 4 gold medals in 2012");
             int gold2012Count = 0;
             for (int i = 0; i < medals.Count; i++)
@@ -93,7 +97,7 @@ namespace Week_01_lab_02_Cars_W
                 }
             }
 
-            //prints a numbered list of 3 world record medals
+            // Prints a numbered list of 3 world record medals
             Console.WriteLine("\n\nAll 3 records");
             int recordCount = 0;
             for (int i = 0; i < medals.Count; i++)
@@ -105,7 +109,7 @@ namespace Week_01_lab_02_Cars_W
                 }
             }
 
-            //saving all the medals to file Medals.txt
+            // Saving all the medals to file Medals.txt
             Console.WriteLine("\n\nSaving to file");
             using (StreamWriter writer = new StreamWriter("Medals.txt"))
             {
@@ -147,5 +151,4 @@ namespace Week_01_lab_02_Cars_W
             return $"{Year} - {TheEvent}{recordString} {Name}({Color})";
         }
     }
-
 }
