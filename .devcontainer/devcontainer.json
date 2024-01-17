@@ -15,12 +15,12 @@
 				"GitHub.codespaces",
 				"vsls-contrib.gitdoc",
 				// C#
-				"ms-dotnettools.csharp",
+				// "ms-dotnettools.csharp",
 				"ms-dotnettools.csdevkit",
-				"ms-dotnettools.vscodeintellicode-csharp",
+				// "ms-dotnettools.vscodeintellicode-csharp",
 				// Dotnet
-				"ms-dotnettools.dotnet-interactive-vscode",
-				"ms-dotnettools.vscode-dotnet-runtime",
+				// "ms-dotnettools.dotnet-interactive-vscode",
+				// "ms-dotnettools.vscode-dotnet-runtime",
 				// "ms-dotnettools.vscode-dotnet-pack",
 				// "ms-dotnettools.vscode-dotnet-sdk",
 				// "formulahendry.dotnet",
