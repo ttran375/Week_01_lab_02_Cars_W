@@ -27,7 +27,7 @@ namespace Week_01_lab_02_Cars_W
             }
 
             Console.Write("Enter owner's name: ");
-            string ownerName = Console.ReadLine();
+            string? ownerName = Console.ReadLine();
             var ownedPets = pets.Where(pet => pet.IsOwnedBy(ownerName));
 
             foreach (Pet pet in ownedPets)
@@ -40,7 +40,7 @@ namespace Week_01_lab_02_Cars_W
     public class Pet
     {
         public string Name { get; }
-        private string? Owner { get; set; }
+        private string Owner { get; set; }
         public int Age { get; }
         public string Description { get; }
         private bool IsHouseTrained { get; set; }
