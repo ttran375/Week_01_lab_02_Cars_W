@@ -54,9 +54,9 @@ namespace Week_01_lab_02_Cars_W
             IsHouseTrained = false;
         }
 
-        public void SetOwner(string newOwner)
+        public override string ToString()
         {
-            Owner = newOwner;
+            return $"Name: {Name}, Age: {Age}, Description: {Description}, Owner: {Owner}, IsHouseTrained: {IsHouseTrained}";
         }
 
         public void Train()
@@ -64,9 +64,9 @@ namespace Week_01_lab_02_Cars_W
             IsHouseTrained = true;
         }
 
-        public override string ToString()
+        public void SetOwner(string newOwner)
         {
-            return $"Name: {Name}, Age: {Age}, Description: {Description}, Owner: {Owner}, IsHouseTrained: {IsHouseTrained}";
+            Owner = newOwner;
         }
 
         public bool IsOwnedBy(string? ownerName)
