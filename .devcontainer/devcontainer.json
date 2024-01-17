@@ -14,6 +14,7 @@
 				"VisualStudioExptTeam.intellicode-api-usage-examples",
 				"VisualStudioExptTeam.vscodeintellicode",
 				// C#
+				"ms-dotnettools.csharp",
 				"ms-dotnettools.csdevkit",
 				"ms-dotnettools.vscode-dotnet-runtime",
 				"ms-dotnettools.vscodeintellicode-csharp",
