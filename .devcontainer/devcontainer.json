@@ -14,16 +14,11 @@
 				"GitHub.copilot-chat",
 				"GitHub.codespaces",
 				"vsls-contrib.gitdoc",
-				// Intellicode
-				"ms-dotnettools.vscodeintellicode-csharp",
-				"VisualStudioExptTeam.intellicode-api-usage-examples",
-				"VisualStudioExptTeam.vscodeintellicode",
-				"VisualStudioExptTeam.vscodeintellicode-completions",
-				"VisualStudioExptTeam.vscodeintellicode-insiders",
 				// C#
 				"ms-dotnettools.csharp",
 				"ms-dotnettools.csdevkit",
 				"ms-dotnettools.vscodeintellicode-csharp",
+				"jchannon.csharpextensions",
 				// Dotnet
 				"ms-dotnettools.dotnet-interactive-vscode",
 				"ms-dotnettools.vscode-dotnet-runtime",
@@ -33,7 +28,6 @@
 				// "formulahendry.dotnet-test-explorer",
 				// "ms-dotnettools.vscode-dotnet-runtime",
 				// "ms-dotnettools.blazorwasm-companion",
-				// "ms-dotnettools.csharp",
 				// "ms-dotnettools.csharp-snippets",
 				// "ms-dotnettools.csharp-pack",
 				// "ms-dotnettools.csharp-interactive-vscode",
