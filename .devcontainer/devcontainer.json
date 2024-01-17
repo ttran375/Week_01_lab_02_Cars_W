@@ -25,9 +25,10 @@
 				// Snippets
 				"kreativ-software.csharpextensions",
 				"jorgeserrano.vscode-csharp-snippets",
-				"adrianwilczynski.asp-net-core-snippet-pack",
 				"vain0x.csharp-gen-ctor",
 				"afmicc.GetterAndSetterGenerator",
+				// "adrianwilczynski.asp-net-core-snippet-pack",
+				// Others
 				"streetsidesoftware.code-spell-checker",
 			]
 		}
