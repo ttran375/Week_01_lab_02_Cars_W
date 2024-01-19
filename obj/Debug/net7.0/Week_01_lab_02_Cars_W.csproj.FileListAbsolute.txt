@@ -1,0 +1,15 @@
+/workspaces/Week_01_lab_02_Cars_W/bin/Debug/net7.0/Week_01_lab_02_Cars_W
+/workspaces/Week_01_lab_02_Cars_W/bin/Debug/net7.0/Week_01_lab_02_Cars_W.deps.json
+/workspaces/Week_01_lab_02_Cars_W/bin/Debug/net7.0/Week_01_lab_02_Cars_W.runtimeconfig.json
+/workspaces/Week_01_lab_02_Cars_W/bin/Debug/net7.0/Week_01_lab_02_Cars_W.dll
+/workspaces/Week_01_lab_02_Cars_W/bin/Debug/net7.0/Week_01_lab_02_Cars_W.pdb
+/workspaces/Week_01_lab_02_Cars_W/obj/Debug/net7.0/Week_01_lab_02_Cars_W.csproj.AssemblyReference.cache
+/workspaces/Week_01_lab_02_Cars_W/obj/Debug/net7.0/Week_01_lab_02_Cars_W.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Week_01_lab_02_Cars_W/obj/Debug/net7.0/Week_01_lab_02_Cars_W.AssemblyInfoInputs.cache
+/workspaces/Week_01_lab_02_Cars_W/obj/Debug/net7.0/Week_01_lab_02_Cars_W.AssemblyInfo.cs
+/workspaces/Week_01_lab_02_Cars_W/obj/Debug/net7.0/Week_01_lab_02_Cars_W.csproj.CoreCompileInputs.cache
+/workspaces/Week_01_lab_02_Cars_W/obj/Debug/net7.0/Week_01_lab_02_Cars_W.dll
+/workspaces/Week_01_lab_02_Cars_W/obj/Debug/net7.0/refint/Week_01_lab_02_Cars_W.dll
+/workspaces/Week_01_lab_02_Cars_W/obj/Debug/net7.0/Week_01_lab_02_Cars_W.pdb
+/workspaces/Week_01_lab_02_Cars_W/obj/Debug/net7.0/Week_01_lab_02_Cars_W.genruntimeconfig.cache
+/workspaces/Week_01_lab_02_Cars_W/obj/Debug/net7.0/ref/Week_01_lab_02_Cars_W.dll

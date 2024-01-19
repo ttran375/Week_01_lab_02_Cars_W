@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Week_01_lab_02_Cars_W/1.0.0": {
+        "runtime": {
+          "Week_01_lab_02_Cars_W.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Week_01_lab_02_Cars_W/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
