@@ -42,6 +42,7 @@
 				"afmicc.GetterAndSetterGenerator",
 				// "adrianwilczynski.asp-net-core-snippet-pack",
 				// Checker
+				"EditorConfig.EditorConfig",
 				"streetsidesoftware.code-spell-checker",
 			]
 		}
