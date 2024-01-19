@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-namespace Week_01_lab_02_Cars_W
+﻿namespace Week_01_lab_02_Cars_W
 {
     internal class Program
     {
@@ -20,47 +13,28 @@ namespace Week_01_lab_02_Cars_W
             Console.WriteLine("Car 2: " + car2);
             Console.WriteLine("Car 3: " + car3);
             Console.WriteLine("Car 4: " + car4);
-
-            if (car1 == car2)
-            {
-                System.Console.WriteLine("This is a test");
-            }
-
-
-
-
-            else
-
-
-
-            {
-                System.Console.WriteLine("This is not a test");
-            }
         }
     }
 
 
     public class Car
     {
-        private int year;
-        private string model;
-        private double price;
-        private bool isDrivable;
+        private readonly int _year;
+        private readonly string _model;
+        private readonly double _price;
+        private readonly bool _isDrivable;
 
         public Car(int year, string model, double price, bool isDrivable = true)
         {
-            this.year = year;
-            this.model = model;
-            this.price = price;
-            this.isDrivable = isDrivable;
+            _year = year;
+            _model = model;
+            _price = price;
+            _isDrivable = isDrivable;
         }
 
         public override string ToString()
         {
-            return $"Year: {year}, Model: {model}, Is Drivable: {isDrivable}, Price: {price}";
+            return $"Year: {_year}, Model: {_model}, Is Drivable: {_isDrivable}, Price: {_price}";
         }
-
     }
-
-
 }
