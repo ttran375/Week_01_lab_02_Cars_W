@@ -1,26 +1,33 @@
-name: dotnet format
+---
+name: Lint
 
-on:
-  push:
-    paths:
-      - "**.cs"
-      - ".editorconfig"
+on:  # yamllint disable-line rule:truthy
+  push: null
+  pull_request: null
 
 jobs:
-  check-format:
-    runs-on: windows-latest
+  build:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: read
+      # To report GitHub Actions status checks
+      statuses: write
 
     steps:
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v1
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
-          dotnet-version: '5.0.x'
+          # super-linter needs the full git history to get the
+          # list of files that changed across commits
+          fetch-depth: 0
 
-      - name: Install dotnet-format tool
-        run: dotnet tool install -g dotnet-format
-
-      - name: Check out code
-        uses: actions/checkout@v2
-
-      - name: Run dotnet format
-        run: dotnet format '.\' --folder --check --verbosity diagnostic
+      - name: Super-linter
+        uses: super-linter/super-linter@v5.7.2  # x-release-please-version
+        env:
+          DEFAULT_BRANCH: main
+          # To report GitHub Actions status checks
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+...
