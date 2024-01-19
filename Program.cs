@@ -20,6 +20,22 @@ namespace Week_01_lab_02_Cars_W
             Console.WriteLine("Car 2: " + car2);
             Console.WriteLine("Car 3: " + car3);
             Console.WriteLine("Car 4: " + car4);
+
+            if (car1 == car2)
+            {
+                System.Console.WriteLine("This is a test");
+            }
+
+
+
+
+            else
+
+
+
+            {
+                System.Console.WriteLine("This is not a test");
+            }
         }
     }
 
@@ -43,5 +59,8 @@ namespace Week_01_lab_02_Cars_W
         {
             return $"Year: {year}, Model: {model}, Is Drivable: {isDrivable}, Price: {price}";
         }
+
     }
+
+
 }
