@@ -1,7 +1,3 @@
-# Submission
-
-See course shell for how and when to submit.
-
 # Creating a Car class
 
 A class is a self-contained piece of software that can function on its own.
