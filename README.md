@@ -1,8 +1,8 @@
 # Creating a Car class
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ttran375/Week_01_lab_02_Cars_W)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ttran375/comp123-lab2)
 
-[![Lint](https://github.com/ttran375/Week_01_lab_02_Cars_W/actions/workflows/main.yml/badge.svg)](https://github.com/ttran375/Week_01_lab_02_Cars_W/actions/workflows/main.yml)
+[![Lint](https://github.com/ttran375/comp123-lab2/actions/workflows/main.yml/badge.svg)](https://github.com/ttran375/comp123-lab2/actions/workflows/main.yml)
 
 A class is a self-contained piece of software that can function on its own.
 
